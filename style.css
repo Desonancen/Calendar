@@ -1,0 +1,143 @@
+body {
+  background: white;
+  font-family: sans-serif;
+}
+
+.head-region {
+  background: #fef0d5;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.head-region .main-text {
+  color: #235C55;
+  margin-left: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.head-region .title {
+  margin: 0 0 5px 0;
+  font-size: 33px;
+}
+
+.head-region .description {
+  margin: 0 0 5px 0;
+}
+
+.head-region .image {
+  width: 99px;
+}
+
+.head-region .share-content {
+  margin-left: auto;
+}
+
+.head-region .social-network {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.main-button {
+  background: #D81E5D;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 13px;
+  font-weight: bold;
+  padding: 5px 13px;
+}
+
+.control-panel .label {
+  font-weight: bold;
+  margin: 0;
+}
+
+.control-panel .dropdown {
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #DBDBDB;
+}
+
+.single-calendar {
+  margin-top: 50px;
+  color: #535053;
+}
+
+.single-calendar .calendar {
+  width: 270px;
+  padding: 15px 10px;
+  border: 1px solid #235C55;
+  border-radius: 8px;
+  margin: 0 10px;
+}
+
+.single-calendar .monthname {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.single-calendar .controlcalendar {
+  margin: 0 20px;
+  font-size: 15px;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.single-calendar .controlcalendar:hover {
+  color: #D81E5D;
+}
+
+.single-calendar:hover .controlcalendar {
+  visibility: visible;
+}
+
+.single-calendar .weekdays {
+  color: #d2d0d2;
+}
+
+.single-calendar .dayname {
+  text-align: center;
+  font-weight: normal;
+}
+
+.single-calendar .daynumber {
+  text-align: center;
+  padding: 15px 5px;
+}
+
+.single-calendar .daynumber:last-child,
+.single-calendar .dayname:last-child {
+  color: #D81E5D;
+}
+
+.single-calendar .daynumber:hover {
+  background: #fef0d5;
+  cursor: pointer;
+}
+
+.calendar-part .layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+._container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+/*# sourceMappingURL=style.css.map */

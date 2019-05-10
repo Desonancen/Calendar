@@ -1,0 +1,144 @@
+$color-red:#D81E5D;
+$font-family:'Roboto Condensed', sans-serif;
+$color-blue:#235C55;
+$color-grey:#DBDBDB;
+$color-grey-dark:#535053;
+$color-yellow:rgb(254, 240, 213);
+
+body{
+    background:white;
+    font-family:sans-serif;
+}
+
+.head-region{
+background: $color-yellow;
+padding:10px;
+margin-bottom:30px;
+
+  .main-text{
+      color:$color-blue;
+      margin-left:20px;
+      font-family: $font-family;
+  }
+ 
+  .title{
+      margin:0 0 5px 0;
+      font-size:33px;
+  }
+
+  .description{
+      margin:0 0 5px 0;
+  }
+
+  .image{
+      width: 99px;
+  }
+
+  .share-content{
+      margin-left: auto;
+  }
+
+  .social-network{
+      text-align:center;
+      margin-top:15px;
+  }
+ 
+}
+
+.main-button{
+    background:$color-red;
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    border-radius:13px;
+    font-weight: bold;
+    padding:5px 13px;
+}
+
+.control-panel{
+
+    .label{
+        font-weight:bold;
+        margin:0;
+    }
+
+    .dropdown{
+        padding:5px;
+        margin-top:5px;
+        border:1px solid $color-grey;
+    }
+}
+
+.single-calendar{
+    margin-top:50px;
+    color:$color-grey-dark;
+    
+    .calendar{
+        width:270px;
+        padding: 15px 10px;
+        border:1px solid $color-blue;
+        border-radius:8px;
+        margin:0 10px;
+    }
+
+    .monthname{
+        font-size:30px;
+        margin-bottom:10px;
+        font-family: $font-family;
+    }
+
+    .controlcalendar{
+        margin:0 20px;
+        font-size:15px;
+        visibility: hidden;
+        cursor:pointer;
+        &:hover{
+            color:$color-red;
+        }
+    }
+
+    &:hover .controlcalendar{
+        visibility: visible;
+    }
+
+    .weekdays{
+        color:lighten($color-grey-dark, 50%)
+    }
+
+    .dayname{
+        text-align:center;
+        font-weight:normal;
+    }
+
+    .daynumber{
+        text-align:center;
+        padding:15px 5px;
+    }
+
+    .daynumber:last-child,
+    .dayname:last-child{
+        color:$color-red;
+    }
+
+    .daynumber:hover{
+        background:$color-yellow;
+        cursor: pointer;
+    }
+
+}
+
+.calendar-part .layout{
+    display:flex;
+    flex-wrap: wrap;
+justify-content: center;
+}
+
+.layout{
+display:flex;
+align-items: center;
+}
+
+._container{
+    margin:0 auto;
+    max-width:960px;
+}
