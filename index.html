@@ -5,26 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fifth try</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
-    <script src="https://yastatic.net/share2/share.js"></script>
+    <title>Document</title>
     <link href="normalize.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
     <div class="head-region">
         <div class="_container">
             <div class="layout">
-                <div class="site-logo">
+                <div class=site-logo>
                     <img class="image"
                         src="https://image.shutterstock.com/image-vector/calendar-vector-icon-trendy-flat-260nw-1089385142.jpg"
-                        alt="Not found">
+                        alt="calendar">
                 </div>
-                <div class="main-text">
+                <div class="main-content">
                     <h1 class="title">Calendar</h1>
                     <p class="description">Choose the month and color, what u want</p>
                 </div>
@@ -40,7 +34,7 @@
     <div class="control-panel">
         <div class="_container">
             <div class="layout">
-                <div class="color-choice">
+                <div class="color choice">
                     <p class="label">Active color</p>
                     <select class="dropdown">
                         <option value="red">Red</option>
@@ -56,8 +50,8 @@
             <div class="layout">
                 <div class="single-calendar">
                     <table class="calendar">
-                        <caption class="monthname"><i class="controlcalendar far fa-minus-square"></i>January<i
-                                class="controlcalendar far fa-plus-square"></i></caption>
+                        <caption class="monthname"><i class="calendarcontrol far fa-minus-square"></i>January<i
+                                class="calendarcontrol far fa-plus-square"></i></caption>
                         <tr class="weekdays">
                             <th class="dayname">Mn</th>
                             <th class="dayname">Tu</th>
@@ -116,8 +110,8 @@
                 </div>
                 <div class="single-calendar">
                     <table class="calendar">
-                        <caption class="monthname"><i class="controlcalendar far fa-minus-square"></i>January<i
-                                class="controlcalendar far fa-plus-square"></i></caption>
+                        <caption class="monthname"><i class="calendarcontrol far fa-minus-square"></i>February<i
+                                class="calendarcontrol far fa-plus-square"></i></caption>
                         <tr class="weekdays">
                             <th class="dayname">Mn</th>
                             <th class="dayname">Tu</th>
@@ -165,7 +159,7 @@
                         </tr>
                         <tr class="week">
                             <td class="daynumber">29</td>
-                            <td class="daynumber">30</td>
+                            <td class="daynumber"></td>
                             <td class="daynumber"></td>
                             <td class="daynumber"></td>
                             <td class="daynumber"></td>
@@ -176,8 +170,8 @@
                 </div>
                 <div class="single-calendar">
                     <table class="calendar">
-                        <caption class="monthname"><i class="controlcalendar far fa-minus-square"></i>January<i
-                                class="controlcalendar far fa-plus-square"></i></caption>
+                        <caption class="monthname"><i class="calendarcontrol far fa-minus-square"></i>March<i
+                                class="calendarcontrol far fa-plus-square"></i></caption>
                         <tr class="weekdays">
                             <th class="dayname">Mn</th>
                             <th class="dayname">Tu</th>
@@ -226,7 +220,7 @@
                         <tr class="week">
                             <td class="daynumber">29</td>
                             <td class="daynumber">30</td>
-                            <td class="daynumber"></td>
+                            <td class="daynumber">31</td>
                             <td class="daynumber"></td>
                             <td class="daynumber"></td>
                             <td class="daynumber"></td>
@@ -236,8 +230,8 @@
                 </div>
                 <div class="single-calendar">
                     <table class="calendar">
-                        <caption class="monthname"><i class="controlcalendar far fa-minus-square"></i>January<i
-                                class="controlcalendar far fa-plus-square"></i></caption>
+                        <caption class="monthname"><i class="calendarcontrol far fa-minus-square"></i>April<i
+                                class="calendarcontrol far fa-plus-square"></i></caption>
                         <tr class="weekdays">
                             <th class="dayname">Mn</th>
                             <th class="dayname">Tu</th>
@@ -294,12 +288,38 @@
                         </tr>
                     </table>
                 </div>
-                
+
             </div>
         </div>
     </div>
-
-
+    <div class="register-region">
+        <div class="_container">
+            <div class="layout">
+                <form class="form-normal" action="index.html" method="GET">
+                    <input class="input" type="text" name="name" id="name" placeholder="Name" required>
+                    <input class="input" type="email" name="email" placeholder="email" required>
+                    <input class="input" type="password" name="password" placeholder="password" required>
+                    <select class="select" name="age">
+                        <option value="0">- Age -</option>
+                        <option value="10">1-10</option>
+                        <option value="20">11-20</option>
+                        <option value="30">21-30</option>
+                    </select>
+                    <label class="radio"><input type="radio" name="color" value="red" checked>Red</label>
+                    <label class="radio"><input type="radio" name="color" value="green">Green</label>
+                    <label class="radio"><input type="radio" name="color" value="black">Black</label>
+                    <label class="checkbox"><input type="checkbox" name="subscribe"> Submit </label>
+                    <input class="submit main-button -big" type="submit" value="Register">
+                </form>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+    <script src="https://yastatic.net/share2/share.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+       
 </body>
 
 </html>
